@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: url('img/background.png'); /* Corrigido o caminho da imagem */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-logo {
+  height: 100px;
+}
+
+nav {
+  display: flex;
+  gap: 32px;
+}
+
+.link-nav {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal {
+  display: flex;
+  padding-top: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #FFF2E7;
+}
+
+h2 {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #B100E8;
+}
+
+/* From Uiverse.io by mobinkakei */ 
+.cta {
+  display: flex;
+  padding: 8px 20px; /* Reduzi o padding */
+  text-decoration: none;
+  font-size: 16px; /* Diminuí o tamanho da fonte */
+  color: white;
+  background: #6225e6;
+  transition: 1s;
+  box-shadow: 4px 4px 0 black; /* Reduzi a sombra */
+  transform: skewX(-15deg);
+  border: none;
+  cursor: pointer;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  transition: 0.5s;
+  box-shadow: 6px 6px 0 #fbc638; /* Ajustei a sombra no hover */
+}
+
+.cta .second {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.cta:hover .second {
+  transition: 0.5s;
+  margin-right: 30px; /* Reduzi o deslocamento */
+}
+
+.span {
+  transform: skewX(15deg);
+}
+
+.second {
+  width: 15px; /* Ajustei o ícone para ficar proporcional ao botão menor */
+  margin-left: 20px;
+  position: relative;
+  top: 12%;
+}
+
+.one {
+  transition: 0.4s;
+  transform: translateX(-50%);
+}
+
+.two {
+  transition: 0.5s;
+  transform: translateX(-25%);
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+
+
+.img-principal {
+  margin-top: 90px;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover;
+}
+
+footer {
+  font-size: 14px;
+   padding-top: 130px;
+   color: #FFF2E7;
+   text-align: center;
+}
